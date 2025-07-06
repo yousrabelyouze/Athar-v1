@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بريد التصويب - أثر</title>
+    <meta name="description" content="أرسل ملاحظاتك واقتراحاتك لمنصة أثر">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ['Tajawal', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arabic-calligraphy {
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            font-size: 3.5rem;
+            background: linear-gradient(90deg, #0ea5e9, #0369a1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col items-center justify-center mb-8">
+                <h1 class="arabic-calligraphy text-center mb-4">أثر</h1>
+                <p class="text-lg text-center text-gray-600 max-w-2xl">
+                    منصة ثقافية لنشر المقالات النقدية والآراء في مجالات المسرح، السينما والكتب.
+                </p>
+            </div>
+            <!-- Navigation -->
+            <nav class="border-t border-b border-gray-200 py-4">
+                <ul class="flex flex-wrap justify-center gap-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-primary-700 transition">الرئيسية</a></li>
+                    <li><a href="theatre.html" class="text-gray-600 hover:text-primary-700 transition">المسرح</a></li>
+                    <li><a href="cinema.html" class="text-gray-600 hover:text-primary-700 transition">السينما</a></li>
+                    <li><a href="books.html" class="text-gray-600 hover:text-primary-700 transition">الكتب</a></li>
+                    <li><a href="feedback.html" class="text-primary-700 font-medium hover:text-primary-900 transition">بريد التصويب</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-primary-700 transition">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-8 pb-2 border-b-2 border-primary-500 inline-block">بريد التصويب</h2>
+        <form class="max-w-xl mx-auto bg-white rounded-lg shadow-md p-8">
+            <label for="feedback" class="block mb-2 text-lg font-medium">اكتب ملاحظتك أو اقتراحك</label>
+            <textarea id="feedback" rows="5" class="w-full border border-gray-300 rounded-lg p-4 mb-4 focus:ring-2 focus:ring-primary-500 focus:border-primary-500" placeholder="اكتب هنا..." required></textarea>
+            <button type="submit" class="bg-primary-600 hover:bg-primary-700 text-white py-2 px-8 rounded-lg transition">إرسال</button>
+        </form>
+    </main>
+    <footer class="bg-primary-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">أثير</h3>
+                    <p class="text-primary-200">منصة ثقافية تهدف إلى إثراء المحتوى الفكري والفني في العالم العربي من خلال المقالات النقدية والتحليلات العميقة.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">الأقسام</h3>
+                    <ul class="space-y-2">
+                        <li><a href="theatre.html" class="text-primary-200 hover:text-white transition">المسرح</a></li>
+                        <li><a href="cinema.html" class="text-primary-200 hover:text-white transition">السينما</a></li>
+                        <li><a href="books.html" class="text-primary-200 hover:text-white transition">الكتب</a></li>
+                        <li><a href="feedback.html" class="text-primary-200 hover:text-white transition">بريد التصويب</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-primary-200 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="theatre.html" class="text-primary-200 hover:text-white transition">المسرح</a></li>
+                        <li><a href="cinema.html" class="text-primary-200 hover:text-white transition">السينما</a></li>
+                        <li><a href="books.html" class="text-primary-200 hover:text-white transition">الكتب</a></li>
+                        <li><a href="contact.html" class="text-primary-200 hover:text-white transition">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة البريدية</h3>
+                    <p class="text-primary-200 mb-4">اشترك ليصلك كل جديد من أثير</p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 rounded-r-lg w-full text-gray-800">
+                        <button type="submit" class="bg-primary-600 hover:bg-primary-700 px-4 py-2 rounded-l-lg transition">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-primary-800 mt-8 pt-8 text-center text-primary-300">
+                <p>© 2023 أثير. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
